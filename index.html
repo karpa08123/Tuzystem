@@ -28,11 +28,33 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
               <!-- Boton derecho -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+              <!-- Menu lateral -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Talktuza</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="user.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Configuracion
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
         </nav>
+        
       <div class="container">
         <!-- 3 columnas de contenido-->
         <div class="container px-9 text-center">
@@ -42,25 +64,62 @@
               <div class="p-3">
 
                 <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Grupos</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Aqui deberian aparecer la lista de grupos a lasa que perteneces</p>
+                  <div class="card-header">
+                    Grupos
+                  </div>
+                  <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">Lorem ipsum dolor sit.</button>
+                    <button type="button" class="list-group-item list-group-item-action">Lorem ipsum dolor sit.</button>
+                    <button type="button" class="list-group-item list-group-item-action">Lorem ipsum dolor sit.</button>
+                  </div>
+                </div><br>
+                
+                <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Talleres
+                  </div>
+                  <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">Lorem ipsum dolor sit.</button>
+                    <button type="button" class="list-group-item list-group-item-action">Lorem ipsum dolor sit.</button>
+                    <button type="button" class="list-group-item list-group-item-action">Lorem ipsum dolor sit.</button>
                   </div>
                 </div>
-                
+
               </div>
             </div>
             <!-- Columna 2 -->
             <div class="col">
                 <div class="p-3">
+                  <div class="card h-100">
+                    <img src="img/sample.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo de la publicacion</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rerum impedit ut perferendis ipsum repudiandae.</p>
+                      <img src="img/userSample.png" width="30px" height="30px"> <p>Nombre del usuario</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div><br><br>
 
                   <div class="card h-100">
-                    <img src="img/sample.jpg" class="card-img-top" alt="...">
+                    <img src="img/sample.jpg" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <img src="..." alt="..."> <p>Nombre del usuario</p>
+                      <h5 class="card-title">Titulo de la publicacion</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore neque optio, magnam nam laborum deserunt.</p>
+                      <img src="img/userSample.png" width="30px" height="30px"> <p>Nombre del usuario</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                  </div><br><br>
+
+                  <div class="card h-100">
+                    <img src="img/sample.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo de la publicacion</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestias, deleniti excepturi tempora dignissimos similique.</p>
+                      <img src="img/userSample.png" width="30px" height="30px"> <p>Nombre del usuario</p>
                     </div>
                     <div class="card-footer">
                       <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -72,13 +131,22 @@
             <!-- Columna 3 -->
             <div class="col">
               <div class="p-3">
-                
+
                 <div class="card" style="width: 18rem;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
+                  <div class="card-header">
+                    Chats
+                  </div>
+                  <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">
+                      <img src="img/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                      <img src="img/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">
+                      <img src="img/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                    </button>
+                  </div>
                 </div>
 
               </div>
