@@ -1,0 +1,204 @@
+<!-- AL MOMENTO DE TRABAJAR CON LA PLANTILLA, NO MODIFIQUES LA PLANTILLA -->
+<!-- DUPLICA LA PLANTILLA, CAMBIA EL NOMBRE DEL ARCHIVO Y POSTERIORMENTE -->
+<!-- YA PUEDES EMPEZAR A MODIFICAR EL ARCHIVO. -->
+<!-- ESTO CON EL FIN DE QUE LA PLANTILLA PERMANEZCA INTACTA-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre de la pestaña -->
+    <title>Talktuza</title>
+    <!-------------------------->
+
+    <!-- Cosas para que funcione Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--------------------------------------->
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Barra superior -->
+        <nav class="navbar sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Talktuza</a>
+              <!-- Buscador -->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <!-- Boton derecho -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Menu lateral -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Talktuza</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="user.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Configuracion
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+          <!-- 3 columnas de contenido-->
+          <div class="container px-9 text-center">
+            <div class="row gx-0">
+              <!-- Columna 1 -->
+              <div class="col">
+                <div class="p-3">
+  
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">Perfiles</div>
+                    <div class="list-group">
+                      <a role="button" href="tec.html" class="list-group-item list-group-item-action">Tecnologico de Mexico</a>
+                      <a role="button" href="ctrlEsc.html" class="list-group-item list-group-item-action">Control Escolar</a>
+                    </div>
+                  </div><br>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">Talleres</div>
+                    <div class="list-group">
+                      <a role="button" href="music.html" class="list-group-item list-group-item-action">Musica</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Columna 2 -->
+              <div class="col">
+                  <div class="p-3">
+                    <div class="container">
+                    <img src="../img/publPhotos/bannMusic.JPG" width="600" height="200">
+
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col-4">
+                          <img src="../img/usrPhotos/musica.png" width="150" height="150">
+                        </div>
+                        <div class="col-8">
+                          <h4>Taller de musica</h4>
+                          <p>Un taller de música es un espacio donde se llevan a cabo actividades relacionadas con la música. Estas actividades pueden incluir clases de expresión vocal, audición musical, movimiento y ritmo a través de juegos, talleres de instrumentos musicales, entre otras.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="container text-center">
+                      <div class="row row-cols-2.5 row-cols-lg-2.5 g-1 g-lg-1">
+                        <div class="col">
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/banda.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">ocar un instrumento musical activa prácticamente todo el cerebro a la vez, en especial las cortezas visuales, auditivas, y motrices. Y como con cualquier otro ejercicio, la práctica disciplinada y estructurada de la música fortalece las funciones cerebrales, permitiéndonos aplicar esa fuerza a otras actividades.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">subido hace 5 minutos</small>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/baile.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">El baile es importante porque:
+                                  Contribuye a mantenernos saludables, ya que es una actividad aeróbica de bajo impacto que ayuda a mejorar nuestro estado físico y equilibra los niveles emocionales.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">10/10/2023</small>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col">
+
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/flauta.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">¿Cuál es el instrumento más fácil de aprender a tocar? Flauta. Es el instrumento de viento más fácil para aprender a tocar, siempre y cuando hablemos de la flauta dulce; esta distinción es importante, porque la flauta travesera no es tan sencilla, y requiere de una técnica más depurada a la hora de soplar por la embocadura.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">30/9/2023</small>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/violin.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">¿Cuál es el instrumento más difícil de aprender?
+                                  Dificultad de instrumentos para tocar |  La respuesta es el violín. Además de su gran precisión, es necesario colocar correctamente el violón en tu hombro y brazo.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">16/9/2023</small>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Columna 3 -->
+              <div class="col">
+                <div class="p-3">
+  
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Chats
+                    </div>
+                    <div class="list-group">
+                      <button type="button" class="list-group-item list-group-item-action">
+                        <img src="../img/usrPhotos/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                      </button>
+                      <button type="button" class="list-group-item list-group-item-action">
+                        <img src="../img/usrPhotos/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                      </button>
+                      <button type="button" class="list-group-item list-group-item-action">
+                        <img src="../img/usrPhotos/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                      </button>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+    <!-- Cosas para que funcione Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--------------------------------------->
+</body>
+</html>
