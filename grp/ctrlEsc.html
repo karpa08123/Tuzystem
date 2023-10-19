@@ -1,0 +1,216 @@
+<!-- AL MOMENTO DE TRABAJAR CON LA PLANTILLA, NO MODIFIQUES LA PLANTILLA -->
+<!-- DUPLICA LA PLANTILLA, CAMBIA EL NOMBRE DEL ARCHIVO Y POSTERIORMENTE -->
+<!-- YA PUEDES EMPEZAR A MODIFICAR EL ARCHIVO. -->
+<!-- ESTO CON EL FIN DE QUE LA PLANTILLA PERMANEZCA INTACTA-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre de la pestaña -->
+    <title>Talktuza</title>
+    <!-------------------------->
+
+    <!-- Cosas para que funcione Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--------------------------------------->
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Barra superior -->
+        <nav class="navbar sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Talktuza</a>
+              <!-- Buscador -->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <!-- Boton derecho -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Menu lateral -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Talktuza</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="user.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Configuracion
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+          <!-- 3 columnas de contenido-->
+          <div class="container px-9 text-center">
+            <div class="row gx-0">
+              <!-- Columna 1 -->
+              <div class="col">
+                <div class="p-3">
+  
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">Perfiles</div>
+                    <div class="list-group">
+                      <a role="button" href="tec.html" class="list-group-item list-group-item-action">Tecnologico de Mexico</a>
+                      <a role="button" href="ctrlEsc.html" class="list-group-item list-group-item-action">Control Escolar</a>
+                    </div>
+                  </div><br>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">Talleres</div>
+                    <div class="list-group">
+                      <a role="button" href="music.html" class="list-group-item list-group-item-action">Musica</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Columna 2 -->
+              <div class="col">
+                  <div class="p-3">
+                    <div class="container">
+                    <img src="../img/publPhotos/bannCtrl.nO6lgG" width="600" height="200">
+
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col-4">
+                          <img src="../img/usrPhotos/ctrlEsc.png" width="150" height="150">
+                        </div>
+                        <div class="col-8">
+                          <h4>Control Escolar</h4>
+                          <p>Es el área que administra de manera transparente, oportuna y eficiente los procesos de Ingreso, Permanencia y Egreso de los aspirantes, alumnos, egresados y titulados, en los términos de la normatividad aplicable, así como los servicios que se derivan de dichos procesos.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="container text-center">
+                      <div class="row row-cols-2.5 row-cols-lg-2.5 g-1 g-lg-1">
+                        <div class="col">
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/idioma.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">En un mundo cada vez más globalizado, hablar inglés es más que una capacidad para mejorar el currículum o una ventaja competitiva adicional: es una necesidad para poder comunicarse y acceder al mercado laboral. Al mismo tiempo, abre las puertas a más experiencias, por ejemplo, de tipo cultural.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">subido hace 5 minutos</small>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/programacion.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">¡Aprender a programar y desarrollar proyectos innovadores! Como programador, puedes crear proyectos realmente muy variados e innovadores: sitios web, aplicaciones web, aplicaciones para móviles, videojuegos y mucho más y todo ello aplicable a todo tipo de empresas y de sectores industriales.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">10/10/2023</small>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col">
+
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/carreras.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">Hoy en día el TESOEM contamos con mas de 3,000 estudiantes, ofrecemos una Maestría en Ingeniería Industrial y 9 carreras:
+
+                                  Contador Público
+                                  Licenciatura en Gastronomía
+                                  Ingeniería Ambiental
+                                  Ingeniería Industrial
+                                  Ingeniería en Administración
+                                  Ingeniería en Energías Renovables
+                                  Ingeniería en Sistemas Computacionales
+                                  Ingeniería en Tecnologías de la Información y Comunicaciones
+                                  Ingeniería en Sistemas Automotrices</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">30/9/2023</small>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Tarjeta publicacion -->
+                          <div class="p-3">
+                            <div class="card h-100">
+                              <img src="../img/publPhotos/convo.jpeg" class="card-img-top">
+                              <div class="card-body">
+                                <p class="card-text">LAS CARRERAS
+
+El plan de Estudios implantado  tiene una duración de nueve semestres para cada una de las carreras que ofrece, incluyendo de un periodo de residencias y servicio social en los últimos semestres.
+
+En el 2001, se amplió la cobertura con la carrera de Ingeniería en Sistemas Computacionales, debido a la demanda de educación superior en el área de tecnologías de la información y computación en la zona oriente del Estado de México. Más tarde la oferta aumenta al ofrecer en 2005 la carrera de Ingeniería Ambiental.</p>
+                              </div>
+                              <div class="card-footer">
+                                <small class="text-body-secondary">16/9/2023</small>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Columna 3 -->
+              <div class="col">
+                <div class="p-3">
+  
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Chats
+                    </div>
+                    <div class="list-group">
+                      <button type="button" class="list-group-item list-group-item-action">
+                        <img src="../img/usrPhotos/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                      </button>
+                      <button type="button" class="list-group-item list-group-item-action">
+                        <img src="../img/usrPhotos/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                      </button>
+                      <button type="button" class="list-group-item list-group-item-action">
+                        <img src="../img/usrPhotos/userSample.png" width="30px" height="30px"><p>Chat 3</p>
+                      </button>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+    <!-- Cosas para que funcione Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--------------------------------------->
+</body>
+</html>
