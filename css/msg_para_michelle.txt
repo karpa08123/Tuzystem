@@ -1,0 +1,7 @@
+si ves este mensaje entonces clonaste la rama correcta del codigo.
+
+Aqui es donde van todos los archivos .css del proyecto, los invocas dentro de el archivo .html tal como viste en tu investigacion
+
+espero que te guste esta herramienta. luego te muestro como se utiliza con codigo.
+
+suerte ;)
