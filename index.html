@@ -15,17 +15,20 @@
     <!-- Cosas para que funcione Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--------------------------------------->
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!------------->
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="feed">
         <!-- Barra superior -->
-        <nav class="navbar sticky-top bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="navbar sticky-top" style="background-color: #BFA0EC;">
+            <div class="container-fluid" >
               <a class="navbar-brand" href="#">Talktuza</a>
               <!-- Buscador -->
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-success" type="submit">Search</button>
               </form>
               <!-- Boton derecho -->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -37,13 +40,13 @@
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Talktuza</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body" id="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="user.html">Perfil</a>
+                      <a class="nav-link" href="#">Perfil</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Configuracion
@@ -63,7 +66,7 @@
             <div class="col">
               <div class="p-3">
 
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;"  id="cardPerf">
                   <div class="card-header">Perfiles</div>
                   <div class="list-group">
                     <a role="button" href="grp/tec.html" class="list-group-item list-group-item-action">Tecnologico de Mexico</a>
@@ -71,7 +74,7 @@
                   </div>
                 </div><br>
 
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" id="cardPerf">
                   <div class="card-header">Talleres</div>
                   <div class="list-group">
                     <a role="button" href="grp/music.html" class="list-group-item list-group-item-action">Musica</a>
@@ -128,7 +131,7 @@
             <div class="col">
               <div class="p-3">
 
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" id="cardPerf">
                   <div class="card-header">
                     Chats
                   </div>
